@@ -297,28 +297,35 @@ namespace Task1
 
         static void ShowTriangle(int n)
         {
+            StringBuilder str = new StringBuilder(n);
+
             for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine(new string('*', i));
+                Console.WriteLine(str.Append('*', 1));
             }
 
         } // Task 1.2
 
         static void ShowAnotherTriangle(int n)
         {
+            StringBuilder str = new StringBuilder(n + 2);
+
             for (int i = 1, stars = 1; i <= n; i++, stars += 2)
             {
-                Console.WriteLine(new string(' ', n - i) + new string('*', stars));
+                Console.WriteLine(str.Append(' ', n - i).Append('*', stars));
+                str.Clear();
             }
         } // Task 1.3
 
         static void Show_X_masTree(int n)
         {
+            StringBuilder str = new StringBuilder(n+2);
             for (int i = 1; i <= n; i++)
             {
                 for (int j = 1, stars = 1; j <= i; j++, stars += 2)
                 {
-                    Console.WriteLine(new string(' ', n - j) + new string('*', stars));
+                    Console.WriteLine(str.Append(' ', n - j).Append('*', stars));
+                    str.Clear();
                 }
             }
 
@@ -407,7 +414,7 @@ namespace Task1
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    if (i + j != 0 && (i + j) % 2 == 0)
+                    if ((i + j) % 2 == 0)
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                     else
                         Console.ResetColor();
@@ -523,7 +530,7 @@ namespace Task1
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    if (i + j != 0 && (i + j) % 2 == 0)
+                    if ((i + j) % 2 == 0)
                         sum += array[i, j];
                 }
             }
