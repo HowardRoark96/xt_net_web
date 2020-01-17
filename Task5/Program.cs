@@ -24,7 +24,7 @@ namespace Task5
         //public static string RestorePath = @"C:\tmp\storage";
 
         public static Dictionary<int, StateFolder> State = new Dictionary<int, StateFolder>();
-
+        
         static void Main(string[] args)
         {
             int select = 0;
