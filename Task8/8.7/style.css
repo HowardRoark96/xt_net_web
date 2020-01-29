@@ -1,0 +1,31 @@
+﻿.articale {
+    margin: 20px;
+    width: 350px;
+}
+
+    .articale h1 {
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 11pt;
+        font-weight: lighter;
+        color: white;
+    }
+
+.articale-color h1 {
+    background-color: seagreen;
+}
+
+.articale p {
+    margin-top: -19px;
+    margin-left: auto;
+    padding: 10px;
+    width: 85%;
+    border: 2px solid white;
+    color: black;
+}
+
+.articale-color p {
+    background-color: gainsboro;
+}

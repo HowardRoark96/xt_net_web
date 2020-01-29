@@ -1,0 +1,50 @@
+﻿body {
+    background-color: #000;
+}
+
+.article {
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 11pt;
+    margin: 10px auto;
+}
+
+.article-color {
+    background: linear-gradient(to top, #dddddd, #ffffff);
+}
+
+.article p {
+    margin: 0;
+    padding: 13px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 12pt;
+}
+
+.header {
+    position: relative;
+    margin: 0;
+    top: -2px;
+    left: -2px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 35px;
+    font-size: 18pt;
+    width: 90px;
+    height: 35px;
+    color: #fcc050;
+    background-color: #000;
+}
+
+    .header::after {
+        content: '';
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 35px;
+        top: -35px;
+        margin-left: 80px;
+        transform: skewX(-30deg);
+        background-color: #000;
+    }

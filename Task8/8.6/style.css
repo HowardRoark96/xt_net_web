@@ -1,0 +1,47 @@
+﻿body {
+    background-color: #333333;
+}
+
+.equalizer {
+    margin: 10px 50px;
+    width: 700px;
+    height: 500px;
+}
+
+    .equalizer ul {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .equalizer > ul > li {
+        display: inline-block;
+        width: 100px;
+        margin: 0 5px;
+        border-radius: 5px 5px 0 0;
+    }
+
+.equalizer-default-color > ul > li {
+    background-image: repeating-linear-gradient(to top, #333333 0px, #333333 5px,transparent 5px, transparent 50px), linear-gradient(#ffd059,#ff8d02);
+}
+
+.colomn-heigh-5 {
+    height: 50%;
+}
+
+.colomn-heigh-2 {
+    height: 20%;
+}
+
+.colomn-heigh-8 {
+    height: 80%;
+}
+
+.colomn-heigh-10 {
+    height: 100%;
+}
+
+.colomn-heigh-3 {
+    height: 30%;
+}

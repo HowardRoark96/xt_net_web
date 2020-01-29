@@ -1,0 +1,82 @@
+﻿form {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 412px;
+    overflow: hidden;
+}
+
+.step-menu label {
+    display: inline-block;
+    text-align: center;
+}
+
+
+.step span {
+    display: block;
+    padding: 0;
+    width: 100px;
+    line-height: 0;
+    z-index: -1;
+}
+
+    .step span:before {
+        content: '';
+        display: block;
+        position: relative;
+        left: 90px;
+        width: 10px;
+        height: 15px;
+        transform: skewX(30deg);
+    }
+
+    .step span:after {
+        content: '';
+        display: block;
+        position: relative;
+        left: 90px;
+        width: 10px;
+        height: 15px;
+        transform: skewX(-30deg);
+    }
+
+.step input[type=radio] {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.step-menu-default-color label:last-of-type span::before {
+    border-right: none;
+}
+
+.step-menu-default-color label:last-of-type span::after {
+    border-right: none;
+}
+
+.step-menu-default-color input[type=radio]:checked + span:before {
+    background-image: linear-gradient(to bottom, #aee188, #64c51d);
+}
+
+.step-menu-default-color input[type=radio]:checked + span:after {
+    background-image: linear-gradient(to top, #aee188, #64c51d);
+}
+
+.step-menu-default-color input[type=radio]:checked + span {
+    color: white;
+    background-image: linear-gradient(to top, #aee188, #64c51d,#aee188);
+}
+
+.step-menu-default-color > label > span {
+    background-image: linear-gradient(to bottom, #dedede, #bfbfbf,#dedede);
+}
+
+    .step-menu-default-color > label > span::before {
+        border-right: 9px solid white;
+        background-image: linear-gradient(to bottom, #dedede, #bfbfbf);
+    }
+
+    .step-menu-default-color > label > span::after {
+        border-right: 9px solid white;
+        background-image: linear-gradient(to top, #dedede, #bfbfbf);
+    }

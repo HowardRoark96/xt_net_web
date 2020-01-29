@@ -1,0 +1,21 @@
+﻿.menu {
+    width: 200px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    line-height: 25px;
+}
+
+.menu-styled-orange {
+    background-color: #f9e497;
+    border: 1px solid black;
+    box-shadow: 4px 4px 0 #880000;
+}
+
+.menu-text-color {
+    color: #900101;
+}
+
+.menu > li {
+    list-style: none;
+}
+

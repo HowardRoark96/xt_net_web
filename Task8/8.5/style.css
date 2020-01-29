@@ -1,0 +1,86 @@
+﻿body {
+    background-color: gray;
+}
+
+.table {
+    display: table;
+    margin: auto;
+    padding: 10px;
+    width: 610px;
+    height: 130px;
+    border-radius: 5px 5px;
+    box-shadow: 0px 7px 50px 0 rgb(0, 0, 0);
+}
+
+.table-color {
+    background-color: white;
+}
+
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    width: 100px;
+}
+
+.tc-right-border {
+    border-right: 1px solid lightgrey;
+}
+
+
+.table-row {
+    display: table-row;
+}
+
+.img {
+    background-image: url('../8.5/picture.jpg');
+    width: 90px;
+    height: 72px;
+    background-size: 90px 216px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.img1 {
+    background-position: left top;
+}
+
+.img2 {
+    background-position: 0 -73px;
+    background-repeat: no-repeat;
+}
+
+.img3 {
+    background-position: 0 -148px;
+}
+
+.table-cell h1 {
+    margin: 10px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    color: orangered;
+}
+
+.table-cell h2 {
+    margin: 15px 0 7px 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 9pt;
+    color: black;
+}
+
+[type="button-orange"] {
+    background-color: orangered;
+    font-family: sans-serif;
+    font-size: 9pt;
+    color: white;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 1px 1px;
+}
+
+    [type="button-orange"]:active {
+        background-color: red;
+        border: none;
+    }
